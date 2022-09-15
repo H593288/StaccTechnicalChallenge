@@ -11,7 +11,7 @@ For eksempel ***yarn start***
 
 1. Download and install .net 6 SDK from https://dotnet.microsoft.com/en-us/download/dotnet/6.0
 2. In a terminal, navigate to the root folder containing .sln file.
-3. Execute the command `dotnet run --project StaccChallenges`
+3. Execute the command `dotnet run --project StaccChallengeWebApp`
 4. Open the link displayed in terminal starting with http/https://localhost:(number) in browser.
 5. Enter a name and press the search button to perform a pep search
 

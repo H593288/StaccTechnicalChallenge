@@ -1,0 +1,71 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Pep Search";
+}
+
+<h2>PEP Search</h2>
+<form method="get">
+    <p>
+        Enter name to search:
+        <input name="searchString" value="@Model.SearchTerm"/>
+        <button asp-page-handler="Search">Search</button>
+    </p>
+</form>
+<table class="table">
+    <thead>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.PepSearchResults[0].Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PepSearchResults[0].Birthdate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PepSearchResults[0].Countries)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PepSearchResults[0].Score)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PepSearchResults[0].Phones)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PepSearchResults[0].Emails)
+        </th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var searchResult in Model.PepSearchResults.OrderByDescending(item => item.Score))
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => searchResult.Name)
+            </td>
+            <td>
+                @{ var birthDate = searchResult.Birthdate.HasValue ? searchResult.Birthdate.Value.ToString("MMMM dd, yyyy") : string.Empty;}
+                @Html.DisplayFor(modelItem => birthDate)
+            </td>
+            <td>
+                <ul>
+                    @foreach (var country in searchResult.Countries)
+                    {
+                        <li>
+                            @Html.DisplayFor(modelItem => country)
+                        </li>
+                    }
+                </ul>
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => searchResult.Score)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => searchResult.Phones)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => searchResult.Emails)
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>

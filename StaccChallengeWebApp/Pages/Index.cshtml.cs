@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc.RazorPages;
-using StaccChallenges.Services;
+using StaccChallengeWebApp.Services;
 
 //backend
-namespace StaccChallenges.Pages;
+namespace StaccChallengeWebApp.Pages;
 
 public class IndexModel : PageModel
 {

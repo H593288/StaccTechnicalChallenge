@@ -3,7 +3,7 @@ using System.Text.Json.Serialization;
 using Flurl.Http;
 using Newtonsoft.Json;
 
-namespace StaccChallenges.Services;
+namespace StaccChallengeWebApp.Services;
 
 public class KycApiService
 {

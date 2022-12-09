@@ -24,5 +24,5 @@ For eksempel ***yarn start***
 Noen spesielle valg du ønsker å beskrive/forsvare?
 > Eventuellt andre kommentarer / utfordringer?
 
-- Lærte meg C# så har lært det grunnleggende for det. Første gang jeg har gjort i et program som heter Rider hvor jeg har brukt både C# og HTML blandet sammen. Å sette opp en Web API gikk fint, men utfordrende med funksjoner slik at det skal fungere som de skal, og finne feilen når den returnerte ukorrekte verdier. Å lære et nytt språk tok tid, men jeg prøvde å gjøre programmet enkelt som mulig. Startet med å lage API også WebAPU. Lærte å bruke debug for å kunne løse feilene. 
+- Lærte meg C# så har lært det grunnleggende for det. Første gang jeg har gjort i et program som heter Rider hvor jeg har brukt både C# og HTML blandet sammen. Å sette opp en Web API gikk fint, men utfordrende med funksjoner slik at det skal fungere som de skal, og finne feilen når den returnerte ukorrekte verdier. Å lære et nytt språk tok tid, men jeg prøvde å gjøre programmet enkelt som mulig. Startet med å lage API også WebAPI. Lærte å bruke debug for å kunne løse feilene. 
 
